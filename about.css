@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fdfaf6;
+  }
+  
+  nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3e4d33;
+  }
+  
+  .logo img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    color: #a2673f;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #a2673f;
+    bottom: -4px;
+    left: 0;
+  }
+
+  /* Dropdown */
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fffaf0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    padding: 0.5rem 0;
+    display: none;
+    flex-direction: column;
+    min-width: 180px;
+    z-index: 1001;
+  }
+  
+  .dropdown-content a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #4a4a4a;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0e5d8;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #4a4a4a;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+  }
+  
+  /* Animate into X */
+  .hamburger.open .top {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.open .middle {
+    opacity: 0;
+  }
+  
+  .hamburger.open .bottom {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Hero Section */
+  .about-hero {
+    background-image: url('images/farm1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 2rem;
+    text-align: center;
+    color: #fffaf0;
+  }
+  
+  .about-hero .hero-content {
+    background-color: rgba(62, 77, 51, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Mission Section */
+  .mission-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    justify-content: center;
+    background-color: #f9f6f0;
+  }
+  
+  .mission-box {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-left: 5px solid #a2673f;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .mission-box h2 {
+    margin-bottom: 1rem;
+    color: #3e4d33;
+  }
+  
+  .team-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fffaf0;
+  }
+  
+  .team-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    color: #3e4d33;
+  }
+  
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .team-member {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 270px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .member-info {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .member-info h3 {
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+    color: #3e4d33;
+  }
+  
+  .member-info .role {
+    font-size: 0.95rem;
+    color: #7b7b7b;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .member-info .bio {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 0.1em;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    background-color: #3e4d33;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+  }
+  
+  .social-icons a:hover {
+    background-color: #a2673f;
+    transform: scale(1.1);
+  }  
+  
+  /* CTA Section */
+  .cta-section {
+    background-color: #a2673f;
+    color: #fffaf0;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 90px;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #fffaf0;
+    color: #3e4d33;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }  
+  
+  .cta-button:hover {
+    background-color: #ffe2bb;
+  }
+  
+  .site-footer {
+    background-color: #3e4d33;
+    color: #fff;
+    padding: 3rem 2rem 2rem;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex: 1 1 250px;
+  }
+  
+  .logo-col h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fffaf0;
+  }
+  
+  .logo-col span {
+    font-size: 1.8rem;
+    color: #a2673f;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fffaf0;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-column ul li a {
+    color: #f5f0e6;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ffd29d;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.15);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #dcdac9;
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .newsletter-form input {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .newsletter-form button {
+    padding: 0.6rem 1rem;
+    background-color: #a2673f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #c28554;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -260px;
+        height: 100vh;
+        width: 240px;
+        background-color: #fffaf0;
+        flex-direction: column;
+        align-items: start;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+        transition: left 0.3s ease;
+        z-index: 999;
+      }
+    
+      .nav-links.active {
+        left: 0;
+      }
+  
+      .dropdown-content {
+          display: none !important;
+        }
+    
+      .hamburger {
+        display: flex;
+      }
+
+    .mission-section {
+      flex-direction: column;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .newsletter {
+      flex-direction: column;
+    }
+  
+    .team-grid {
+      flex-direction: column;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .team-member {
+        width: 90%;
+        max-width: 400px;
+      }
+    
+      .member-info {
+        text-align: center;
+      }
+    
+      .social-icons {
+        justify-content: center;
+      }
+  }
+  

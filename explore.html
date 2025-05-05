@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="explore.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <title>Virtual Tour</title>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Grandma's Farm Logo">
+        <span>Grandma's Farm</span>
+      </div> 
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="About.html">About Us</a>
+      <div class="dropdown">
+        <a href="farmshop.html">Farm Shop ▾</a>
+        <div class="dropdown-content">
+            <a href="farmshop.html">Fresh Produce</a>
+            <a href="farmshop.html">Handmade Goods</a>
+            <a href="farmshop.html">Gift Baskets</a>
+        </div>
+      </div>      
+      <a href="explore.html">Explore the Farm</a>
+      <a href="events.html">Events & Booking</a>
+      <a href="blog.html">Blog</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div class="bar top"></div>
+      <div class="bar middle"></div>
+      <div class="bar bottom"></div>
+    </div>
+  </nav>
+
+  <section class="farm-video-section">
+    <div class="video-overlay">
+      <h1>Experience the Heart of Grandma’s Farm</h1>
+      <p>Take a virtual stroll through our fields, barns, and all the magic in between.</p>
+    </div>
+    <div class="video-wrapper">
+      <video autoplay loop muted playsinline>
+        <source src="images/virtual-farm-tour.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+   
+  <!-- Farm Zones Interactive Cards -->
+<section class="farm-zones">
+    <h2>Explore Our Farm Zones</h2>
+    <div class="zones-grid">
+      <div class="zone-card">
+        <img src="images/orchard.jpg" alt="The Orchard">
+        <div class="zone-content">
+          <h3>The Orchard</h3>
+          <p>Stroll through rows of apple, peach, and pear trees, ripe for the picking in season.</p>
+        </div>
+      </div>
+      <div class="zone-card">
+        <img src="images/animal-pen.jpg" alt="Animal Pens">
+        <div class="zone-content">
+          <h3>Animal Pens</h3>
+          <p>Meet our goats, chickens, and cows, and learn how we care for them.</p>
+        </div>
+      </div>
+      <div class="zone-card">
+        <img src="images/greenhouse.jpg" alt="Greenhouse">
+        <div class="zone-content">
+          <h3>Greenhouse</h3>
+          <p>See where we start our seedlings and grow herbs year-round.</p>
+        </div>
+      </div>
+      <div class="zone-card">
+        <img src="images/farmhouse.jpg" alt="Farmhouse Kitchen">
+        <div class="zone-content">
+          <h3>Farmhouse Kitchen</h3>
+          <p>Home to Grandma's recipes—where the magic of farm-to-table comes alive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- A Day on the Farm Timeline -->
+  <section class="farm-timeline">
+    <h2>A Day on the Farm</h2>
+    <div class="timeline-container">
+      <div class="timeline-step">
+        <span class="time">6:00 AM</span>
+        <p>Sunrise & Field Walk</p>
+      </div>
+      <div class="timeline-step">
+        <span class="time">8:00 AM</span>
+        <p>Feeding the Animals</p>
+      </div>
+      <div class="timeline-step">
+        <span class="time">11:00 AM</span>
+        <p>Harvest Time</p>
+      </div>
+      <div class="timeline-step">
+        <span class="time">1:00 PM</span>
+        <p>Farm Lunch with Fresh Produce</p>
+      </div>
+      <div class="timeline-step">
+        <span class="time">3:00 PM</span>
+        <p>Workshops & Activities</p>
+      </div>
+      <div class="timeline-step">
+        <span class="time">6:00 PM</span>
+        <p>Sunset & Relaxation</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Interactive Farm Map -->
+  <section class="farm-map">
+    <h2>Farm Map</h2>
+    <div class="map-container">
+      <img src="images/farmmap.jpg" alt="Farm Map" class="farm-map-img">
+      <!-- Optional: hotspots or tooltips could be added here -->
+    </div>
+  </section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column logo-col">
+        <h3><span>🌾</span> Grandma's Farm</h3>
+        <p>Rooted in tradition, growing for tomorrow. Come experience the harmony of land, life, and legacy.</p>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="farmshop.html">Farm Shop</a></li>
+            <li><a href="explore.html">Explore the Farm</a></li>
+            <li><a href="events.html">Events & Booking</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>    
+  
+      <div class="footer-column">
+        <h4>Connect with Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-7H8v-3h2.44V9.5c0-2.43 1.44-3.78 3.65-3.78 1.06 0 2.18.19 2.18.19v2.4H15.5c-1.21 0-1.59.75-1.59 1.52V12h2.7l-.43 3h-2.27v7C18.34 21.13 22 17 22 12z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M21.8 8s-.2-1.5-.8-2.2c-.7-.8-1.5-.8-1.9-.9C16.8 4.5 12 4.5 12 4.5h-.1s-4.8 0-7.1.4c-.5 0-1.3.1-2 .9C2.2 6.5 2 8 2 8S2 9.5 2 11v2c0 1.5.2 3 .2 3s.2 1.5.8 2.2c.7.8 1.7.8 2.1.9 1.5.1 6.9.4 6.9.4s4.8 0 7.1-.4c.5 0 1.3-.1 1.9-.9.6-.7.8-2.2.8-2.2S22 14.5 22 13v-2c0-1.5-.2-3-.2-3zM10 15V9l5 3-5 3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.99l8 6 8-6V18H4z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Join Our Newsletter</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Grandma's Farm. All rights reserved.</p>
+    </div>
+  </footer> 
+  <script src="script.js"></script>
+</body>
+</html>

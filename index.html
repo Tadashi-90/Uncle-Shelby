@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grandma's Farm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Grandma's Farm Logo">
+      <span>Grandma's Farm</span>
+    </div> 
+    <div class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="About.html">About Us</a>
+      <div class="dropdown">
+        <a href="farmshop.html">Farm Shop ▾</a>
+        <div class="dropdown-content">
+          <a href="farmshop.html">Fresh Produce</a>
+          <a href="farmshop.html">Handmade Goods</a>
+          <a href="farmshop.html">Gift Baskets</a>
+        </div>
+      </div>      
+      <a href="explore.html">Explore the Farm</a>
+      <a href="events.html">Events & Booking</a>
+      <a href="blog.html">Blog</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div class="bar top"></div>
+      <div class="bar middle"></div>
+      <div class="bar bottom"></div>
+    </div>
+  </nav>
+
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="images/farm1.jpg" alt="Farm view 1" class="carousel-image active">
+      <img src="images/farm7.jpeg" alt="Farm view 2" class="carousel-image">
+      <img src="images/farm5.jpg" alt="Farm view 3" class="carousel-image">
+      <img src="images/farm9.jpg" alt="Farm view 4" class="carousel-image">
+      <button class="prev-btn" id="prevBtn">&#8249;</button>
+        <button class="next-btn" id="nextBtn">&#8250;</button>
+
+      <div class="carousel-text">
+        <h1>Welcome to Grandma's Farm</h1>
+        <p>Rooted in tradition. Growing for tomorrow. Experience the harmony of land, life, and legacy.</p>
+      </div>
+      <div class="carousel-pagination" id="carouselPagination"></div>
+    </div>
+  </div>
+
+  <section class="farm-highlights">
+    <h2>Farm Highlights</h2>
+    <div class="highlight-grid">
+      <div class="highlight-tile">
+        <div class="highlight-icon"><i class="fas fa-hippo"></i></div>
+        <h3>Free-Range Animals</h3>
+        <p>Experience the freedom of free-range animals, raised with care and respect.</p>
+      </div>
+      <div class="highlight-tile">
+        <div class="highlight-icon"><i class="fas fa-leaf"></i></div>
+        <h3>Organic Crops</h3>
+        <p>Our crops are grown without chemicals, ensuring natural flavors and healthy produce.</p>
+      </div>
+      <div class="highlight-tile">
+        <div class="highlight-icon"><i class="fas fa-bread-slice"></i></div>
+        <h3>Handmade Goods</h3>
+        <p>Delicious homemade baked goods, made with love and the finest ingredients.</p>
+      </div>
+      <div class="highlight-tile">
+        <div class="highlight-icon"><i class="fas fa-sun"></i></div>
+        <h3>Sunrise Walks</h3>
+        <p>Join us for a peaceful sunrise walk across the beautiful farm landscapes.</p>
+      </div>
+    </div>
+  </section> 
+  
+  <section class="about-farm">
+    <div class="about-farm-content">
+      <div class="about-text">
+        <h2>We Go Way Back!</h2>
+        <p>Grandma's Farm has been cultivating quality produce and nurturing life on the land for over three generations. We pride ourselves on sustainable farming practices and creating a welcoming environment for all to experience the beauty of nature and hard work.</p>
+        <p>Our farm is more than just a place; it’s a journey through the values of family, tradition, and community. Whether you’re visiting for the first time or returning, you’ll always feel like part of the family.</p>
+        <a href="blog.html">Read More</a>
+      </div>
+      <div class="about-image">
+        <img src="images/grandma2.jpeg" alt="Grandma's Farm" />
+      </div>
+    </div>
+  </section>  
+
+  <section class="testimonials">
+    <h2>What Our Visitors Are Saying</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <div class="avatar">
+          <img src="images/farmer3.avif" alt="User 1" />
+        </div>
+        <div class="testimonial-content">
+          <p>"The farm was an amazing experience! We learned so much about sustainable farming, and the food was incredible. Highly recommend it!"</p>
+          <div class="testimonial-meta">
+            <span class="name">John Doe</span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="avatar">
+          <img src="images/farmer2.jpg" alt="User 2" />
+        </div>
+        <div class="testimonial-content">
+          <p>"A peaceful retreat. We spent the weekend here and felt so refreshed. The sunrise walks were unforgettable!"</p>
+          <div class="testimonial-meta">
+            <span class="name">Jane Smith</span>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="avatar">
+          <img src="images/grandma3.avif" alt="User 3" />
+        </div>
+        <div class="testimonial-content">
+          <p>"Such a unique experience! The staff was friendly, and the farm-to-table meals were delicious. Can't wait to visit again!"</p>
+          <div class="testimonial-meta">
+            <span class="name">Michael Lee</span>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <section class="visit-cta">
+    <div class="visit-cta-content">
+      <h2>Ready to experience the farm life?</h2>
+      <p>Whether it’s a day visit, weekend stay, or hands-on learning tour—Grandma’s Farm is waiting for you.</p>
+      <a href="events.html" class="cta-button">Plan Your Visit</a>
+    </div>
+  </section>
+  
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">What are your opening hours?</button>
+        <div class="faq-answer">
+          <p>We’re open every day from 8:00 AM to 6:00 PM, including weekends and most holidays.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do I need to book in advance?</button>
+        <div class="faq-answer">
+          <p>Walk-ins are welcome, but we recommend booking in advance for tours and large groups.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Are pets allowed on the farm?</button>
+        <div class="faq-answer">
+          <p>For safety reasons, pets are not allowed—except registered service animals.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I buy products online?</button>
+        <div class="faq-answer">
+          <p>Yes! Our farm shop offers select items for delivery. Visit the Farm Shop page for more details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trusted-companies">
+    <div class="section-header">
+      <h2>🌱 Companies That Trust Our Products</h2>
+      <p>From fresh produce to sustainable systems, our farm supports organizations that care about quality.</p>
+    </div>
+  
+    <div class="logos-grid">
+      <div class="logo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+      </div>
+      <div class="logo-item">
+        <img src="/images/whole-foods-market-1.svg" alt="Whole Foods Market">
+      </div>
+      <div class="logo-item">
+        <img src="images/starbucks-coffee-seeklogo.png" alt="Starbucks">
+      </div>
+      <div class="logo-item">
+        <img src="images/unilev.png" alt="Unilever">
+      </div>
+      <div class="logo-item">
+        <img src="images/walmart.png" alt="Walmart">
+      </div>
+      <div class="logo-item">
+        <img src="images/nestle.png" alt="Nestlé">
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column logo-col">
+        <h3><span>🌾</span> Grandma's Farm</h3>
+        <p>Rooted in tradition, growing for tomorrow. Come experience the harmony of land, life, and legacy.</p>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="farmshop.html">Farm Shop</a></li>
+          <li><a href="explore.html">Explore the Farm</a></li>
+          <li><a href="events.html">Events & Booking</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Connect with Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-7H8v-3h2.44V9.5c0-2.43 1.44-3.78 3.65-3.78 1.06 0 2.18.19 2.18.19v2.4H15.5c-1.21 0-1.59.75-1.59 1.52V12h2.7l-.43 3h-2.27v7C18.34 21.13 22 17 22 12z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M21.8 8s-.2-1.5-.8-2.2c-.7-.8-1.5-.8-1.9-.9C16.8 4.5 12 4.5 12 4.5h-.1s-4.8 0-7.1.4c-.5 0-1.3.1-2 .9C2.2 6.5 2 8 2 8S2 9.5 2 11v2c0 1.5.2 3 .2 3s.2 1.5.8 2.2c.7.8 1.7.8 2.1.9 1.5.1 6.9.4 6.9.4s4.8 0 7.1-.4c.5 0 1.3-.1 1.9-.9.6-.7.8-2.2.8-2.2S22 14.5 22 13v-2c0-1.5-.2-3-.2-3zM10 15V9l5 3-5 3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.99l8 6 8-6V18H4z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Join Our Newsletter</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Grandma's Farm. All rights reserved.</p>
+    </div>
+  </footer>  
+
+  <script src="script.js"></script>
+</body>
+</html>

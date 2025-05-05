@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="events.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <title>Events and Booking</title>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Grandma's Farm Logo">
+        <span>Grandma's Farm</span>
+      </div> 
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="About.html">About Us</a>
+      <div class="dropdown">
+        <a href="farmshop.html">Farm Shop ▾</a>
+        <div class="dropdown-content">
+            <a href="farmshop.html">Fresh Produce</a>
+            <a href="farmshop.html">Handmade Goods</a>
+            <a href="farmshop.html">Gift Baskets</a>
+        </div>
+      </div>      
+      <a href="explore.html">Explore the Farm</a>
+      <a href="events.html">Events & Booking</a>
+      <a href="blog.html">Blog</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div class="bar top"></div>
+      <div class="bar middle"></div>
+      <div class="bar bottom"></div>
+    </div>
+  </nav>
+  
+  <section class="farm-events-section">
+    <div class="section-header">
+      <h2>Events & Bookings</h2>
+      <p>See what's growing at the farm!</p>
+    </div>
+  
+    <div class="upcoming-events">
+      <h3>Upcoming Events</h3>
+      <div class="event-carousel" id="eventCarousel">
+        <!-- Slides injected via JS -->
+      </div>
+    </div>
+  
+    <div class="past-events">
+      <h3>Past Events</h3>
+      <div class="event-grid" id="pastEventsGrid">
+        <!-- Cards injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-section">
+    <div class="booking-content">
+      <div class="booking-text">
+        <h2>Book Your Visit</h2>
+        <p>Join us at the farm! Whether it's a workshop, a tour, or a family day, we'd love to host you.</p>
+      </div>
+  
+      <form class="booking-form">
+        <label>
+          Full Name
+          <input type="text" name="name" placeholder="Jane Doe" required>
+        </label>
+  
+        <label>
+          Email
+          <input type="email" name="email" placeholder="jane@example.com" required>
+        </label>
+  
+        <label>
+          Choose Event
+          <select name="event" required>
+            <option value="">Select an event</option>
+            <option value="harvest">Harvest Festival</option>
+            <option value="yoga">Goat Yoga</option>
+            <option value="honey">Honey Workshop</option>
+          </select>
+        </label>
+  
+        <label>
+          Preferred Date
+          <input type="date" name="date" required>
+        </label>
+  
+        <label>
+          Message (Optional)
+          <textarea name="message" rows="4" placeholder="Any special requests?"></textarea>
+        </label>
+  
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column logo-col">
+        <h3><span>🌾</span> Grandma's Farm</h3>
+        <p>Rooted in tradition, growing for tomorrow. Come experience the harmony of land, life, and legacy.</p>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="farmshop.html">Farm Shop</a></li>
+            <li><a href="explore.html">Explore the Farm</a></li>
+            <li><a href="events.html">Events & Booking</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Connect with Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-7H8v-3h2.44V9.5c0-2.43 1.44-3.78 3.65-3.78 1.06 0 2.18.19 2.18.19v2.4H15.5c-1.21 0-1.59.75-1.59 1.52V12h2.7l-.43 3h-2.27v7C18.34 21.13 22 17 22 12z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M21.8 8s-.2-1.5-.8-2.2c-.7-.8-1.5-.8-1.9-.9C16.8 4.5 12 4.5 12 4.5h-.1s-4.8 0-7.1.4c-.5 0-1.3.1-2 .9C2.2 6.5 2 8 2 8S2 9.5 2 11v2c0 1.5.2 3 .2 3s.2 1.5.8 2.2c.7.8 1.7.8 2.1.9 1.5.1 6.9.4 6.9.4s4.8 0 7.1-.4c.5 0 1.3-.1 1.9-.9.6-.7.8-2.2.8-2.2S22 14.5 22 13v-2c0-1.5-.2-3-.2-3zM10 15V9l5 3-5 3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.99l8 6 8-6V18H4z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Join Our Newsletter</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Grandma's Farm. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          hamburger.classList.toggle('open');
+        });
+      const upcoming = [
+        { title: "Harvest Festival", date: "June 10, 2025", image: "./images/harvest.jpg", desc: "Celebrate the bounty of the season with us." },
+        { title: "Goat Yoga", date: "May 28, 2025", image: "./images/goat-yoga.jpg", desc: "Stretch and smile with friendly farm goats." },
+        { title: "Honey Workshop", date: "July 5, 2025", image: "./images/honeyworkshop.jpg", desc: "Learn how we harvest sweet golden honey." },
+        { title: "Animal Tour", date: "Augest 21, 2025", image: "./images/anitour.jpg", desc: "Be sure not to miss the animal tour." }
+      ];
+  
+      const past = [
+        { title: "Spring Planting Day", date: "April 15, 2025", image: "./images/planting.jpg" },
+        { title: "Farm to Table Dinner", date: "March 10, 2025", image: "./images/dinner.jpg" },
+        { title: "Pumpkin Patch Tour", date: "October 2024", image: "./images/pumpkin.jpg" }
+      ];
+  
+      const carousel = document.getElementById('eventCarousel');
+      const pastGrid = document.getElementById('pastEventsGrid');
+  
+      upcoming.forEach(ev => {
+        const card = document.createElement('div');
+        card.className = 'event-card';
+        card.innerHTML = `
+          <img src="${ev.image}" alt="${ev.title}">
+          <div class="card-body">
+            <h4>${ev.title}</h4>
+            <p><em>${ev.date}</em></p>
+            <p>${ev.desc}</p>
+          </div>`;
+        carousel.appendChild(card);
+      });
+  
+      past.forEach(ev => {
+        const card = document.createElement('div');
+        card.className = 'past-card';
+        card.innerHTML = `
+          <img src="${ev.image}" alt="${ev.title}">
+          <div class="past-body">
+            <h5>${ev.title}</h5>
+            <span>${ev.date}</span>
+          </div>`;
+        pastGrid.appendChild(card);
+      });
+    });
+  </script>  
+  
+</body>
+</html>
